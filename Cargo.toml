@@ -1,0 +1,14 @@
+[package]
+name = "fuzz-exporter"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.96"
+metrics = "0.24.1"
+metrics-exporter-prometheus = "0.16.2"
+tokio = { version = "1.43.0", features = ["full"] }
+winnow = "0.7.3"
+
+[dev-dependencies]
+winnow = { version = "0.7.3", features = ["debug"] }
